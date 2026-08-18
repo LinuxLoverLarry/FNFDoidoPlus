@@ -17,17 +17,16 @@ class Init extends MusicBeatState
 		DiscordIO.check();
 
 		var dirs:Array<String> = null;
-		var modDir = "mods";
+		var modDoot:String = "mods";
 
 		if (!FileSystem.exists(modsDir)) {
-			try FileSystem.createDirectory(modsDir);
+			try FileSystem.createDirectory(modsDoot);
 		}
 		
 		try {
 			Polymod.init({
-				modRoot: "mods",
-				dirs:dirs,
-				frameworks: [Polymod.Framework.FLIXEL]
+				modRoot: modDoot,
+				dirs: dirs
 			});
 		} catch (e:Dynamic) {
 			trace("Polymod initialization failed: " + e);
