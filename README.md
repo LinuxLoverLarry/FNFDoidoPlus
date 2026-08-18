@@ -1,92 +1,43 @@
-# FNF: DOIDO ENGINE
-<p align="center">
-<img src="https://www.newgrounds.com/dump/draw/a7487bb1dcc15a499c00a5c5d4be5eb3">
-</p>
+# FNF: DOIDO ENGINE PLUS
+(NAME MAY CHANGE SOON)
 
-## Friday Night Funkin' Rewritten
+## Doido Engine: Rewritten
 
-FNF: Doido Engine is a rewritte of FNF's code, while still being written in HaxeFlixel and aiming to be familiar to anyone knowledged in other FNF hardcoded engines.
+FNF: Doido Engine Plus is a rewritte of Doido Engine.
 
 ## Features
 
-- Re-Organized Source Code
-- HScript-Iris support for softcoded Modcharts!
-- Full Controller Support
-- Support for spritesheet, animate atlas or Aseprite sprites
-- Erect Remix support
-- Customizable Note skins and types
-- Asset Modifier for notes, ratings, countdowns, etc...
-- New Chart Editor featuring Events
-- New Character Offset Editor
-- Optimized memory and CPU usage
-- Customizable loading screen
-- Easily customizable Options and Save data
-- In-game Crash Handler
-- Chart auto-saving
+- A WIP Polymod integration framework
+- Lil buddies!
+- Improved PlayState visuals, such as hold splashes
+- A WIP implementation of the V-Slice UI
 
 and more!
 
-### Supports Windows, Linux and HTML5!
-
-## How to use
-For information on how to Build the engine, as well as guides for how to use it, please check out the [FNF: Doido Engine Wiki](https://doidoteam.github.io/wiki/)!
-If you need help with anything, you can [join our Discord Server for support!](https://discord.gg/KVXf9Ygzu5)
+### Supports Windows and Linux!
 
 ### Libraries
-To install the correct libraries, you can run your platform's respective script in `art/setup/`. You can also install manually by checking the `.hmm` file.
+To install the correct libraries, run `haxelib install hmm` (or `sudo haxelib install hmm` on any Linux distro.) and after you have that installed, 
+open a terminal inside of the folder that your fork or clone of this repository is held in, and run `haxelib run hmm install` 
+(or `sudo haxelib run hmm install` for any Linux distro).
+
+### Packages (Only For Linux)
+For Linux users, you will need to install soem packages for this engine to work properly. Some are not used, but may be implemented later.
+Best to have them on hand.
+
+For apt package manager distributions, run `sudo apt install haxe vlc` 
 
 ## Licenses
 
-The code in FNF': Doido Engine and it's core original assets are licensed under the Apache 2.0 license: (https://www.apache.org/licenses/LICENSE-2.0).
+The code in Doido Engine Plus and it's core original assets are licensed under the Apache 2.0 license: (https://www.apache.org/licenses/LICENSE-2.0).
 Some assets, including the "Friday Night Funkin'" name and logo, are property of The Funkin' Crew Inc. and all rights are reserved to it.
 Some other assets, such as test sprites and music, are used under permission from their creators, and so, have their rights reserved to whoever created them.
 
+### [LinuxLoverLarry](https://youtube.com/linuxloverlarry) - Doido Engine Plus' Main Developer
+## [Our Repositories Contributors](https://github.com/LinuxLoverLarry/FNFDoidoPlus/graphs/contributors)
 
-<p align="center">
-<img src="https://www.newgrounds.com/dump/draw/5657fbf528979526e5e7da27e30cd2a7">
-</p>
+### [FPS+ Repository](https://github.com/ThatRozebudDude/FPS-Plus-Public) - These Guys For Providing Inspo And Code
 
 ### [DiogoTV](https://bsky.app/profile/diogotv.bsky.social) - Doido Engine's Owner and Main Coder
-### [teles](https://youtube.com/@telesfnf) - Doido Engine's Additional Coder
-
-### [GoldenFoxy](https://bsky.app/profile/goldenfoxy.bsky.social) - Main designer of Doido Engine's chart editor
-### [JulianoBeta](https://www.youtube.com/@prodjuyko) - Composed Doido Engine's offset menu music
-### [crowplexus](https://github.com/crowplexus) - Creator of HScript Iris
-### [yoisabo](https://bsky.app/profile/yoisabo.bsky.social) - Chart Editor's Event Icons Artist
-### [cocopuffs](https://x.com/cocopuffswow) - Mobile Button Artist
-
-### [doubleonikoo](https://bsky.app/profile/doubleonikoo.bsky.social) - didn't really do much but i already made the ingame icon so you can stay... for now (-DiogoTV)
-
-## [Github Contributors](https://github.com/DoidoTeam/FNF-Doido-Engine/graphs/contributors)
-
-## Special Thanks
-### [Anakim](https://www.youtube.com/@Anakim2), [ArturYoshi](https://www.youtube.com/@arturyoshi), [BeastlyChip♧](https://www.youtube.com/@beastlychip_), [Bnyu](https://twitter.com/bnyu_official), [Evandro](https://www.youtube.com/@evandrogabriel4531), [NxtVithor](https://bsky.app/profile/nxtvithor.bsky.social), [Pi3tr0](https://www.youtube.com/channel/UCEkf4h74pKFK9RO3FAze-7Q), [Raphalitos](https://www.youtube.com/@RaphaLitosReviews), [ZieroSama <33](https://bsky.app/profile/samaziero.bsky.social)
-
-## Songs used to test the engine
-#### Base FNF' Songs - Kawai Sprite
-#### [Blam](https://youtu.be/0ig_WF-YAp8?t=1417), [-Debug](https://youtu.be/0ig_WF-YAp8?t=1824) - Yoisabo
-#### [Collision](https://youtu.be/Q6x0ylzN7L0), [Lunar Odyssey](https://youtu.be/N0HzDRY38js) - BeastlyChip♧
-#### [Useless V2](https://youtu.be/sgSeGm0i_BI?si=0Ep-aZcZakjzU5ff) - teles ft. Pi3tr0
-#### [Beep Power](https://youtu.be/NamGMx1xYL4) - Moodyyaser
-
-## Showcase
-
-<p align="center">
-<img src="https://doidoteam.github.io/img/readme/1main.png">
-</p>
-
-<p align="center">
-<img src="https://doidoteam.github.io/img/readme/6chart.png">
-</p>
-
-<p align="center">
-<img src="https://doidoteam.github.io/img/readme/7events.png">
-</p>
-
-<p align="center">
-<img src="https://doidoteam.github.io/img/readme/9character.png">
-</p>
-
-<p align="center">
-<img src="https://doidoteam.github.io/img/readme/10crash.png">
-</p>
+### [The Rest Of Em'](https://github.com/DoidoTeam/FNF-Doido-Engine) - The Rest Of Those Guys
+## [Original Doido Github Contributors](https://github.com/DoidoTeam/FNF-Doido-Engine/graphs/contributors)

@@ -5,6 +5,8 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.graphics.FlxGraphic;
 import states.*;
+import polymod;
+import polymod.Polymod;
 
 class Init extends MusicBeatState
 {
@@ -13,6 +15,13 @@ class Init extends MusicBeatState
 		super.create();
 		SaveData.init();
 		DiscordIO.check();
+
+		#if MODS_ALLOWED
+		Polymod.Init({
+			modRoot: "./mods/",
+			dirs:["test"]	
+		});
+		#end
 		
 		FlxG.fixedTimestep = false;
 		FlxG.mouse.useSystemCursor = true;
