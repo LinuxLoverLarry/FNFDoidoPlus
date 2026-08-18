@@ -109,10 +109,10 @@ class SplashNote extends FlxSprite
 				{
 					case "doido":
 						frames = Paths.getSparrowAtlas('notes/doido/holdSplashes');
-						scale.set(0.95,0.95);
+						scale.set(1.3,1.3);
 					default:
 						frames = Paths.getSparrowAtlas('notes/base/holdSplashes');
-						scale.set(0.7,0.7);
+						scale.set(1.3,1.3);
 				}
 				direction = direction.toUpperCase();
 				animation.addByPrefix("start", 	'holdCoverStart$direction', 24, false);
@@ -124,7 +124,7 @@ class SplashNote extends FlxSprite
 				else
 				{
 					for(anim in ["start", "loop", "splash"])
-						addOffset(anim, 6, -28);
+						addOffset(anim, 9, -35);
 				}
 		}
 		updateHitbox();

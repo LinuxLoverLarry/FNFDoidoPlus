@@ -5,8 +5,8 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.graphics.FlxGraphic;
 import states.*;
-import polymod;
-import polymod.Polymod;
+import sys.FileSystem;
+import polymod.*;
 
 class Init extends MusicBeatState
 {
@@ -16,12 +16,23 @@ class Init extends MusicBeatState
 		SaveData.init();
 		DiscordIO.check();
 
-		#if MODS_ALLOWED
-		Polymod.init({
-			modRoot: "./mods/",
-			dirs:["test"]	
-		});
-		#end
+		var dirs:Array<String> = null;
+		var modDir = "mods";
+
+		if (!FileSystem.exists(modsDir)) {
+			try FileSystem.createDirectory(modsDir);
+			catch(e) trace("Failed to create mods dir: " + e);
+		}
+		
+		try {
+			Polymod.init({
+				modRoot: "mods",
+				dirs:dirs,
+				frameworks: [Polymod.Framework.FLIXEL]
+			});
+		} catch (e:Dynamic) {
+			trace("Polymod initialization failed: " + e);
+		}
 		
 		FlxG.fixedTimestep = false;
 		FlxG.mouse.useSystemCursor = true;

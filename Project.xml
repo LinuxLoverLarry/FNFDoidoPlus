@@ -46,8 +46,7 @@
 	<set name="BUILD_DIR" value="export/release" unless="debug" />
 
 	<source path="source" />
-	<assets path="assets" /> <!-- if="VIDEOS_ALLOWED" /> -->
-	<!--<assets path="assets" exclude="videos" unless="VIDEOS_ALLOWED" />-->
+	<assets path="assets" />
 	<assets path="art/mobile" rename="assets/images/mobile" if="TOUCH_CONTROLS" />
 
 	<!-- RENAME UNDERSCORE FOLDERS -->
