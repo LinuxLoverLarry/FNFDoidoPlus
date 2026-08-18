@@ -21,7 +21,6 @@ class Init extends MusicBeatState
 
 		if (!FileSystem.exists(modsDir)) {
 			try FileSystem.createDirectory(modsDir);
-			catch(e) trace("Failed to create mods dir: " + e);
 		}
 		
 		try {
