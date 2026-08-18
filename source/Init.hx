@@ -17,7 +17,7 @@ class Init extends MusicBeatState
 		DiscordIO.check();
 
 		#if MODS_ALLOWED
-		Polymod.Init({
+		Polymod.init({
 			modRoot: "./mods/",
 			dirs:["test"]	
 		});

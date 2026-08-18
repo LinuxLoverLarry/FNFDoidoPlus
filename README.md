@@ -26,6 +26,7 @@ For Linux users, you will need to install soem packages for this engine to work 
 Best to have them on hand.
 
 For apt package manager distributions, run `sudo apt install haxe vlc` 
+For pacman package manager distributions, run `sudo pacman -S install haxe vlc`
 
 ## Licenses
 
